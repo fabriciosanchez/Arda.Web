@@ -8,7 +8,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Rewrite;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 namespace Arda.Web
 {
@@ -36,8 +39,13 @@ namespace Arda.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Adding localization and globalization resources
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+            .AddDataAnnotationsLocalization();
 
             //Adding a global rule to force the https usage for the entire application
             services.Configure<MvcOptions>(options =>
@@ -54,6 +62,19 @@ namespace Arda.Web
 
             //Redirecting all http requests to https
             var options = new RewriteOptions().AddRedirectToHttps();
+
+            //Defining languages supported by the application and configuring behaviors
+            var supportedCultures = new[]
+            {
+                new CultureInfo("en-US"),
+                new CultureInfo("pt-BR"),
+            };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en-US"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
 
             //Verifying the execution environment
             if (env.IsDevelopment())

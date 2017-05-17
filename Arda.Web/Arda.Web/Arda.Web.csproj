@@ -23,4 +23,7 @@
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Resources\View.Home.Index.en.Designer.cs" />
+  </ItemGroup>
 </Project>
