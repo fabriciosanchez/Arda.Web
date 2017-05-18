@@ -12,7 +12,8 @@ namespace Arda.Web
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
-                .UseKestrel(options => {
+                .UseKestrel(options =>
+                {
                     options.NoDelay = true;
                     options.UseHttps("arda.pfx", "Pa$$w0rd");
                     options.UseConnectionLogging();
