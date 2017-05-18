@@ -39,19 +39,19 @@ namespace Arda.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Adding localization and globalization resources
-            services.AddLocalization(options => options.ResourcesPath = "Resources");
-
-            // Add framework services.
-            services.AddMvc()
-            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-            .AddDataAnnotationsLocalization();
-
             //Adding a global rule to force the https usage for the entire application
             services.Configure<MvcOptions>(options =>
             {
                 options.Filters.Add(new RequireHttpsAttribute());
             });
+
+            //Adding localization and globalization resources
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+            //Adding MVC with configurations
+            services.AddMvc()
+            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+            .AddDataAnnotationsLocalization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,12 +66,12 @@ namespace Arda.Web
             //Defining languages supported by the application and configuring behaviors
             var supportedCultures = new[]
             {
-                new CultureInfo("en-US"),
-                new CultureInfo("pt-BR"),
+                //new CultureInfo("en-US"),
+                new CultureInfo("pt-BR")
             };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
-                DefaultRequestCulture = new RequestCulture("en-US"),
+                DefaultRequestCulture = new RequestCulture("pt-BR"),
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
             });
