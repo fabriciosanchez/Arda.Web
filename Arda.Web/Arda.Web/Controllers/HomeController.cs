@@ -12,6 +12,7 @@ namespace Arda.Web.Controllers
     public class HomeController : Controller
     {
         private IStringLocalizer<HomeController> _localizer;
+
         public HomeController(IStringLocalizer<HomeController> localizer)
         {
             _localizer = localizer;
@@ -19,7 +20,6 @@ namespace Arda.Web.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Pag"] = _localizer["PageTitle"];
             return View();
         }
 
