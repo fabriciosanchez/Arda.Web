@@ -117,8 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <!-- DATA -->
-  <data name="Page Title" xml:space="preserve">
-    <value>Welcome</value>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Welcome - Arda Management Tool</value>
   </data>
 </root>

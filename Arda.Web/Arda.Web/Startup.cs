@@ -66,12 +66,12 @@ namespace Arda.Web
             //Defining languages supported by the application and configuring behaviors
             var supportedCultures = new[]
             {
-                //new CultureInfo("en-US"),
+                new CultureInfo("en-US"),
                 new CultureInfo("pt-BR")
             };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
-                DefaultRequestCulture = new RequestCulture("pt-BR"),
+                DefaultRequestCulture = new RequestCulture("en-US"),
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
             });

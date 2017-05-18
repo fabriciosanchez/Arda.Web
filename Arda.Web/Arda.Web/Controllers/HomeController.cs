@@ -19,7 +19,7 @@ namespace Arda.Web.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Titulo"] = _localizer["Nome"];
+            ViewData["Pag"] = _localizer["PageTitle"];
             return View();
         }
 
