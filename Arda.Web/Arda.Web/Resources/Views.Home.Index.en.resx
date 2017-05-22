@@ -156,10 +156,43 @@
   <data name="AboutSection_Text9" xml:space="preserve">
     <value>Which is the real delivery capacity of team? The answer to this question isn’t easy to be found. The great problem here is in fact of how to collect data with accuracy. This aspect is very important to provide to managers a right vision about team capacity.</value>
   </data>
+  <data name="CollaborationSection_Text1" xml:space="preserve">
+    <value>Collaboration</value>
+  </data>
+  <data name="FAQSection_Text1" xml:space="preserve">
+    <value>Regarding workloads. What means "Expertise"?</value>
+  </data>
+  <data name="FAQSection_Text2" xml:space="preserve">
+    <value>In a Workload context, the "Expertise" represents the main ability that you will develop through the workload execution.</value>
+  </data>
+  <data name="FAQSection_Text3" xml:space="preserve">
+    <value>Example: You will implement a PoC in a customer enviroment. The PoC consists on build a web farm cluster based in virtual machines and load balancer. Probably in this case the expertise that will be developed is "Building Infra", given the nature of workload.</value>
+  </data>
+  <data name="FAQSection_Text4" xml:space="preserve">
+    <value>All expertises</value>
+  </data>
+  <data name="FAQSection_Text5" xml:space="preserve">
+    <value>&lt;strong&gt;Management:&lt;/strong&gt; Most general management possible in a team, involving different areas, people and technologies. A good example for this is an event organization, like TechEd.</value>
+  </data>
+  <data name="FAQSection_Text6" xml:space="preserve">
+    <value>&lt;strong&gt;Project:&lt;/strong&gt; Applyable when the management refers only to an specific project inside of team. Here we have work similar to an PMO. A good example for workloads with this expertise is Arda project.</value>
+  </data>
+  <data name="GetSupportSection_Text1" xml:space="preserve">
+    <value>Get Support</value>
+  </data>
+  <data name="HowToSection_Text1" xml:space="preserve">
+    <value>How to</value>
+  </data>
   <data name="Index_CoverSubtext" xml:space="preserve">
     <value>a &lt;strong&gt;open source&lt;/strong&gt; tool to manage workloads to awesome teams</value>
   </data>
+  <data name="OverviewSection_Text1" xml:space="preserve">
+    <value>Overview</value>
+  </data>
   <data name="PageTitle" xml:space="preserve">
     <value>Welcome</value>
+  </data>
+  <data name="WorkingOnThisText" xml:space="preserve">
+    <value>We are working on this. Come back soon to get updates.</value>
   </data>
 </root>

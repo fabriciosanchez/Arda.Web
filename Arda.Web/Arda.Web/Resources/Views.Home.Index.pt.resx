@@ -156,10 +156,43 @@
   <data name="AboutSection_Text9" xml:space="preserve">
     <value>Qual é a real capacidade de entrega da equipe? A resposta para esta pergunta não é fácil de ser encontrada. O grande problema aqui está no fato de como coletar dados com precisão. Este aspecto é muito importante para fornecer aos gerentes uma visão correta sobre a capacidade da equipe.</value>
   </data>
+  <data name="CollaborationSection_Text1" xml:space="preserve">
+    <value>Colabore</value>
+  </data>
+  <data name="FAQSection_Text1" xml:space="preserve">
+    <value>Em relação aos workloads. O que representa o "expertise"?</value>
+  </data>
+  <data name="FAQSection_Text2" xml:space="preserve">
+    <value>No contexto de um workload, "expertise" refere-se a principal habilidade que você desenvolverá através da execução daquele workload em questão.</value>
+  </data>
+  <data name="FAQSection_Text3" xml:space="preserve">
+    <value>Exemplo: você irá executar um PoC no cliente. A PoC consiste na criação de um web farm de máquinas virtuais com load balancer na frente. Por conta da natureza desta atividade, provavelmente o "expertise" associado será "Building infra".</value>
+  </data>
+  <data name="FAQSection_Text4" xml:space="preserve">
+    <value>Todos os expertises disponíveis</value>
+  </data>
+  <data name="FAQSection_Text5" xml:space="preserve">
+    <value>&lt;strong&gt;Management&lt;/strong&gt;: é a opção mais geral de gerenciamento para um worload. Geralmente envolve diferentes áreas, tecnologias, etc. Um bom exemplo de workload que se encaixa nesta categoria é a organização de um evento, como o TechEd.</value>
+  </data>
+  <data name="FAQSection_Text6" xml:space="preserve">
+    <value>&lt;strong&gt;Project&lt;/strong&gt;: aplicável a workloads que se referem a projetos dentro do próprio time de trabalho, isto é, não envolve outras áreas. Um bom exemplo desta categoria é o Arda.</value>
+  </data>
+  <data name="GetSupportSection_Text1" xml:space="preserve">
+    <value>Precisa de ajuda?</value>
+  </data>
+  <data name="HowToSection_Text1" xml:space="preserve">
+    <value>Como começar</value>
+  </data>
   <data name="Index_CoverSubtext" xml:space="preserve">
     <value>uma ferramenta de &lt;strong&gt;código aberto&lt;/strong&gt; para gestão de equipes</value>
   </data>
+  <data name="OverviewSection_Text1" xml:space="preserve">
+    <value>Visão geral</value>
+  </data>
   <data name="PageTitle" xml:space="preserve">
     <value>Seja bem vindo(a) </value>
+  </data>
+  <data name="WorkingOnThisText" xml:space="preserve">
+    <value>Estamos trabalhando na construção desta seção. Por favor, volte em breve.</value>
   </data>
 </root>
